@@ -12,6 +12,7 @@
 		432012291CD50D20004D9076 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432012271CD50D20004D9076 /* Main.storyboard */; };
 		4320122B1CD50D20004D9076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4320122A1CD50D20004D9076 /* Assets.xcassets */; };
 		4320122E1CD50D20004D9076 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4320122C1CD50D20004D9076 /* LaunchScreen.storyboard */; };
+		43381A691CD882CD0003F829 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43381A681CD882CD0003F829 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4320122A1CD50D20004D9076 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4320122D1CD50D20004D9076 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4320122F1CD50D20004D9076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43381A681CD882CD0003F829 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43381A691CD882CD0003F829 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +41,7 @@
 		432012171CD50D20004D9076 = {
 			isa = PBXGroup;
 			children = (
+				43381A681CD882CD0003F829 /* CoreLocation.framework */,
 				432012221CD50D20004D9076 /* Map Demo */,
 				432012211CD50D20004D9076 /* Products */,
 			);
@@ -251,11 +255,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Map Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yaserbahrami.myApps.Map-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -264,11 +270,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Map Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yaserbahrami.myApps.Map-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -291,6 +299,7 @@
 				432012341CD50D20004D9076 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
